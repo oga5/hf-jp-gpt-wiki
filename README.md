@@ -2,7 +2,6 @@
 
 このディレクトリは、https://huggingface.co/oga5/hf-jp-gpt-wiki で公開しているLLMのトレーニングに用いたコードです。
 書籍「つくりながら学ぶ！LLM 自作入門」を参考にしています。(多くのコードを、そのまま利用しています)
-Hugging Face Hub 上のモデルと SentencePiece のトークナイザを用いてテキスト生成を実行できます。
 
 ファイル一覧:
 - `download_dataset.py`: データセットをダウンロードするスクリプト
