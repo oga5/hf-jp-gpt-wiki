@@ -1,7 +1,7 @@
-# 公開スクリプト
+# LLMの事前学習のサンプル
 
 このディレクトリは、https://huggingface.co/oga5/hf-jp-gpt-wiki で公開しているLLMのトレーニングに用いたコードです。
-書籍「つくりながら学ぶ！LLM 自作入門」を参考にしています。
+書籍「つくりながら学ぶ！LLM 自作入門」を参考にしています。(多くのコードを、そのまま利用しています)
 Hugging Face Hub 上のモデルと SentencePiece のトークナイザを用いてテキスト生成を実行できます。
 
 ファイル一覧:
@@ -130,9 +130,10 @@ model = AutoModelForCausalLM.from_pretrained("hf_jp_gpt_wiki", trust_remote_code
 
 ## ライセンス
 
-`LICENSE.md`（Apache License 2.0）を参照してください。
+- 本リポジトリのコードは Apache License 2.0 の下で提供します。詳細は `LICENSE.md` をご確認ください。
 
-- モデルコード: "LLMs from Scratch" のサンプルを元にしています（Apache 2.0）。ソース: https://github.com/rasbt/LLMs-from-scratch
+- トレーニング用コードの大部分は "LLMs from Scratch" のサンプルを元にしています（Apache 2.0）。ソース: https://github.com/rasbt/LLMs-from-scratch
+
 - 学習データセット: [fujiki/wiki40b_ja](https://huggingface.co/datasets/fujiki/wiki40b_ja)。このデータセットは wiki40b の日本語部分を再整形したものです。本データセットを利用する場合は、以下の原著論文を引用してください:
 
 ```
